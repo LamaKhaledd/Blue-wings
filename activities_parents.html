@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blue Wings Kindergarten</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+
+    <style>
+
+        #calendar {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin-top: 30px;
+            margin-bottom: 70px;
+        }
+
+        .day {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: center; display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        /* Additional Bootstrap Styles */
+        .mt-4 {
+            margin-top: 1.5rem !important;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-xxl bg-white p-0">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+        <a href="activities_parents.html" class="navbar-brand">
+            <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Blue Wings Kindergarten</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto">
+
+                <a href="guardian.php" class="nav-item nav-link ">Profile</a>
+                <a href="activities_parents.html" class="nav-item nav-link active ">Activities</a>
+                <a href="library_parents.html" class="nav-item nav-link ">library</a>
+
+            </div>
+            <a href="index.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Log out<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Activities Section -->
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+
+
+            <!-- Part 2: Show Activities -->
+
+            <h1 class="text-center mb-4" style="margin-top: 50px; padding-bottom: 50px;">Weekly Activities</h1>
+
+            <div class="activity-card card">
+                <img src="img/fcnpajbi.png" alt="Outdoor Adventure" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title" style="margin-top: 30px; padding-bottom: 10px;">Outdoor Adventure</h3>
+                    <p class="card-text" style="padding-bottom: 10px;">
+                        Enjoy the great outdoors with our exciting outdoor adventure activity. Let the kids explore
+                        nature, learn about different plants and animals, and have a fun-filled day of exploration.
+                    </p>
+                    <!-- Add more details or buttons as needed -->
+                </div>
+            </div>
+
+
+            <!--             Part 3: Calendar-->
+            <h1 class="text-center mt-4" style="padding-top: 120px; padding-bottom: 30px;">Weekly Activities Calendar</h1>
+            <div class="calendar"  style=" display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;">
+                <!--                 Day 1-->
+                <div class="day border">
+                    <h4 class="mb-3" >Sunday</h4>
+                    <h6>Art and Craft</h6>
+                    <h7>  Kindergarten  </h7>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary" onclick="alert('Description clicked')">See Description</button>
+                    </div>
+                </div>
+
+
+                <!-- Day 2 -->
+                <div class="day border">
+                    <h4 class="mb-3">Monday</h4>
+                    <h6>Puzzles and Games</h6>
+                    <h7>  Kindergarten  </h7>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary" onclick="alert('Description clicked')">See Description</button>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="day border">
+                    <h4 class="mb-3">Tuesday</h4>
+                    <h6>Building with Blocks</h6>
+                    <h7>  Kindergarten  </h7>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary" onclick="alert('Description clicked')">See Description</button>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="day border">
+                    <h4 class="mb-3">Wednesday</h4>
+                    <h6>Cooking</h6>
+                    <h7>  Kindergarten  </h7>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary" onclick="showDescription('Description clicked')">See Description</button>
+                    </div>
+                </div>
+
+
+                <!-- Day 5 -->
+                <div class="day border">
+                    <h4 class="mb-3">Thursday</h4>
+                    <h6>Math Manipulatives</h6>
+                    <h7>  Kindergarten  </h7>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary" onclick="alert('Description clicked')">See Description</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="activityDescription" style="display: none; margin-top: 10px;">
+                <h6 class="day border" style="color: black; text-align: center; margin-left: 50px;  margin-right: 50px;">This cooking activity on Wednesday is a delightful hands-on experience for our young chefs. The children will engage in preparing simple and fun recipes, fostering creativity and learning about basic cooking techniques. From measuring ingredients to mixing and tasting, this activity aims to enhance their fine motor skills and introduce them to the joy of creating tasty treats. Join us as we explore the world of flavors and create delicious memories together!</h6>>
+            </div>
+
+            <!-- Add this script block after your existing scripts -->
+            <script>
+                // Function to show the activity description
+                function showDescription() {
+                    // Get the description element
+                    var descriptionElement = document.getElementById('activityDescription');
+
+                    // Toggle the visibility of the description element
+                    if (descriptionElement.style.display === 'none' || descriptionElement.style.display === '') {
+                        descriptionElement.style.display = 'block';
+                    } else {
+                        descriptionElement.style.display = 'none';
+                    }
+                }
+            </script>
+
+
+            <!-- Part 1: Add Activity Form -->
+            <h1 class="text-center mb-4" style="margin-top: 70px; padding-bottom: 10px; color: black;">-----------------------------------------------------------------------------------------</h1>
+
+            <h1 class="text-center mb-4" style="margin-top: 100px; padding-bottom: 10px;">Have any feedback or comments? Feel free to share them with the teacher!"        </h1>
+
+            <div class="col-md-6 mb-4" style="margin-bottom: 50px">
+                <form id="addActivityForm">
+                    <div class="mb-3">
+                        <label for="commentDescription" class="form-label">Write your comment here:</label>
+                        <textarea class="form-control" id="commentDescription" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="addComment()">Send comment</button>
+                    <script>
+                        function addComment() {
+                            alert('Your comment has been sent successfully!');
+                        }
+                    </script>
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Rafedia Street, Nablus, Palestine</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+970 59-5678903</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>bluewings@example.com</p>
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                    <a class="btn btn-link text-white-50" href="contact.php">Contact Us</a>
+                    <a class="btn btn-link text-white-50" href="">Our Services</a>
+                    <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                    <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Photo Gallery</h3>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="img/classes-4.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="img/classes-5.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Newsletter</h3>
+                    <p>Didn't you join us until now !!! hurry up and enjoy :)</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">2023 Kindergarten blue Wings</a>,All Right Reserved.
+
+                        <!-- Designed By <a class="border-bottom" >Muna & Lama</a> -->
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.php">Home</a>
+                            <a href="about.html">about</a>
+                            <a href="contact.php">contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script>
+    // Placeholder function for adding activity (to be implemented)
+    function addActivity() {
+        var activityName = document.getElementById('activityName').value;
+        var activityDescription = document.getElementById('activityDescription').value;
+        var fileUpload = document.getElementById('fileUpload').files[0];
+
+        // Perform validation or additional processing as needed
+
+        // Display details in alert (replace with actual implementation)
+        alert('Activity Name: ' + activityName + '\nDescription: ' + activityDescription + '\nFile: ' + (fileUpload ? fileUpload.name : 'None'));
+    }
+
+    // Placeholder function for deleting activity (to be implemented)
+    function deleteActivity() {
+        alert('Activity deleted. (Not implemented)');
+    }
+
+    // Placeholder function for updating activity (to be implemented)
+    function updateActivity() {
+        alert('Activity updated. (Not implemented)');
+    }
+
+    // Placeholder function for adding calendar event (to be implemented)
+    function addCalendarEvent() {
+        alert('Calendar event added. (Not implemented)');
+    }
+
+    // Placeholder function for deleting calendar event (to be implemented)
+    function deleteCalendarEvent() {
+        alert('Calendar event deleted. (Not implemented)');
+    }
+
+    // Placeholder function for updating calendar event (to be implemented)
+    function updateCalendarEvent() {
+        alert('Calendar event updated. (Not implemented)');
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        // Dummy events for illustration
+        var events = [
+            {
+                title: 'Activity 1',
+                start: '2023-12-23T10:00:00',
+                end: '2023-12-23T12:00:00'
+            },
+            {
+                title: 'Activity 2',
+                start: '2023-12-24T14:00:00',
+                end: '2023-12-24T16:00:00'
+            }
+        ];
+
+        // Initialize FullCalendar
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            events: events
+        });
+    });
+
+</script>
+</body>
+
+</html>
